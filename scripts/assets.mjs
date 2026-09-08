@@ -1,0 +1,7 @@
+import sharp from 'sharp';
+import { readFile } from 'node:fs/promises';
+const icon = await readFile('public/favicon.svg');
+await sharp(icon).resize(64, 64).png().toFile('public/favicon.png');
+await sharp(icon).resize(180, 180).png().toFile('public/apple-touch-icon.png');
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#fafaf9"/><g stroke="#e8e7e5">${Array.from({ length: 13 }, (_, i) => `<path d="M${760 + i * 40} 0v630"/>`).join('')}${Array.from({ length: 17 }, (_, i) => `<path d="M760 ${i * 40}h440"/>`).join('')}</g><g font-family="Arial,sans-serif"><text x="70" y="110" font-size="43" font-weight="700" letter-spacing="-2" fill="#0d0d0d">Apex<tspan fill="#c4197a">Grid</tspan></text><text x="72" y="195" font-size="13" letter-spacing="3" fill="#9a1361">DIGITAL MARKETING, CONNECTED.</text><g font-size="63" font-weight="700" letter-spacing="-2"><text x="70" y="288">Connect your brand</text><text x="70" y="366">to its next stage</text><text x="70" y="444" fill="#c4197a">of growth.</text></g><text x="72" y="555" font-size="19" fill="#6b6b6e">Strategy. Search. Content. Conversion.</text></g><circle cx="975" cy="320" r="145" fill="none" stroke="#c4197a"/><circle cx="975" cy="320" r="103" fill="none" stroke="#d4b4c6"/><rect x="902" y="247" width="146" height="146" rx="14" fill="#0d0d0d"/><path d="m937 355 77-77m-70 0h70v70" fill="none" stroke="#f18abe" stroke-width="5"/></svg>`;
+await sharp(Buffer.from(svg)).png().toFile('public/social-preview.png');

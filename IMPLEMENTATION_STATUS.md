@@ -1,0 +1,39 @@
+# Implementation status
+
+Updated 8 September 2026.
+
+**Local implementation: complete. Public launch: blocked by required business facts and owner review.**
+
+## Completed
+
+- Read `ApexGrid.md`, inspected the supplied `apexgrid.jpeg`, preserved both originals. Workspace initially had no app or Git repository.
+- Built the React/Vite/Tailwind static project directly in this directory, with pinned dependencies and a verified npm lockfile installation.
+- Implemented the editorial ink/magenta/off-white identity, text wordmark, original connected-marketing diagram, concept graphics, one local licensed font, icons, favicon and 1200×630 social image.
+- Completed homepage, six distinct services, approach/examples, contact, privacy, terms and 404: 12 generated HTML outputs.
+- Added native mobile navigation, keyboard/Escape behavior, skip link, FAQs, reduced-motion handling, safe service preselection and honest unconfigured/email/Formspree modes.
+- Added static rendering/hydration, unique metadata, conditional canonicals/sitemap, preview robots/noindex, known-fact structured data, local preview with genuine 404s and gzip.
+- Completed reproducible build, lint, formatting, interaction/static tests, browser verification, link and release checks.
+- Finished README, business details, launch checklist, asset/license notes and QA evidence. Source files are formatted for editing.
+
+## Verified
+
+- `npm ci`, formatting, lint and production build pass.
+- 33 unit/static tests plus 23 Chromium tests pass; 23 Firefox tests also pass.
+- 459 local references resolve across 12 HTML pages.
+- No horizontal overflow in representative pages at 320–3840 px. No-script navigation/content, keyboard operation, reduced motion, and emulated 200% zoom/reflow pass.
+- Six representative page types pass automated accessibility scans in both browsers.
+- Final mobile Lighthouse: Performance 100, Accessibility 100, Best Practices 100, SEO 63 (intentional preview indexing restrictions), LCP 1.5s, CLS 0, TBT 0ms.
+- Development SSR and production direct paths/404 verified. No hydration/page errors found.
+- Runtime npm dependency audit reports zero vulnerabilities. Development audit exceptions are documented in `QA_REPORT.md`.
+
+## Remaining launch facts and exact limitations
+
+Supply the verified production origin, operator, email/contact mode, retention practices and owner confirmations in `src/data/site.js`. Review copy/brand/legal details, authorize and verify a real endpoint enquiry if chosen, then rebuild and pass `check:release`. The current contact page intentionally says online enquiries are unavailable.
+
+WebKit execution is blocked by missing host libraries. Native browser-UI zoom, real devices, full screen-reader testing and actual host behavior remain unverified. The Lighthouse development dependency chain has four audit findings. See `QA_REPORT.md` for exact evidence and limits.
+
+No external account was created, no real enquiry was sent, and nothing was published, purchased, committed or pushed. Next action is owner configuration/review for public launch; the local implementation does not require a further coding phase to use or review.
+
+## Run
+
+`npm run dev` starts the editable local site. `npm run build && npm run preview` serves the static build at `http://localhost:4173`. If a default port is occupied, use the URL printed by the command. Deployment output is `dist/` only.

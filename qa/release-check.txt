@@ -1,0 +1,28 @@
+
+> apexgrid@1.0.0 check:release
+> node scripts/check-release.mjs
+
+NOT READY FOR PUBLIC LAUNCH
+- Configure a verified, real HTTPS production origin.
+- Enable indexability deliberately after owner review.
+- Confirm the legal operator name.
+- Provide a verified enquiry/privacy email address.
+- Configure a functioning email or supported endpoint enquiry mode.
+- Confirm enquiry retention practices.
+- Owner confirmation required: copy.
+- Owner confirmation required: brand.
+- Owner confirmation required: legal.
+- Owner confirmation required: contactTested.
+- Preview noindex remains: /
+- Preview noindex remains: /services/seo/
+- Preview noindex remains: /services/paid-media/
+- Preview noindex remains: /services/social-media/
+- Preview noindex remains: /services/content-branding/
+- Preview noindex remains: /services/web-design/
+- Preview noindex remains: /services/analytics-cro/
+- Preview noindex remains: /approach/
+- Preview noindex remains: /contact/
+- Preview noindex remains: /privacy/
+- Preview noindex remains: /terms/
+- robots.txt still blocks crawlers.
+- Required production output missing: dist/sitemap.xml

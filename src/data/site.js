@@ -1,0 +1,21 @@
+export const site = {
+  brandName: 'ApexGrid',
+  legalName: null,
+  productionUrl: null,
+  email: null,
+  phoneDisplay: null,
+  phoneE164: null,
+  whatsappNumber: null,
+  location: null,
+  bookingUrl: null,
+  socialLinks: [],
+  contactMode: 'unconfigured',
+  formEndpoint: null,
+  formProvider: null, // Supported endpoint adapter: 'formspree'
+  retentionInfo: null,
+  analyticsEnabled: false,
+  verifiedTestimonials: [],
+  verifiedCaseStudies: [],
+  indexable: false,
+  confirmations: { copy: false, brand: false, legal: false, contactTested: false },
+};

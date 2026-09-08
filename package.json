@@ -1,0 +1,53 @@
+{
+  "name": "apexgrid",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir .ssr && node scripts/prerender.mjs",
+    "preview": "node scripts/serve.mjs",
+    "lint": "eslint .",
+    "test": "vitest run && playwright test",
+    "test:unit": "vitest run",
+    "test:browser": "playwright test",
+    "check:links": "node scripts/check-links.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "audit": "node scripts/audit.mjs",
+    "assets": "node scripts/assets.mjs",
+    "format": "prettier --write src scripts tests *.js *.json index.html",
+    "format:check": "prettier --check src scripts tests *.js *.json index.html",
+    "test:firefox": "playwright test --config playwright.cross.config.js"
+  },
+  "dependencies": {
+    "lucide-react": "1.43.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@eslint/js": "9.39.4",
+    "@fontsource-variable/manrope": "5.3.0",
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/vite": "4.3.3",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "eslint": "9.39.4",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.12.0",
+    "jsdom": "26.1.0",
+    "lighthouse": "12.6.1",
+    "prettier": "3.9.6",
+    "sharp": "0.35.4",
+    "tailwindcss": "4.3.3",
+    "vite": "6.4.3",
+    "vitest": "3.2.7"
+  },
+  "packageManager": "npm@11.4.2"
+}
