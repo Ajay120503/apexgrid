@@ -24,3 +24,7 @@ tmp/
 *.tsbuildinfo
 .DS_Store
 Thumbs.db
+
+# Local implementation notes and historical verification reports
+/QA_REPORT.md
+/IMPLEMENTATION_STATUS.md

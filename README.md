@@ -36,7 +36,7 @@ The Vite client build creates hashed assets. A separate build of `src/entry-serv
 
 `src/lib/routes.js` drives route generation and metadata, and shares service data with navigation and sitemap generation. `dist/404.html` is always noindex. Missing production configuration yields no production canonical or sitemap and adds preview noindex/robots restrictions. A configured domain creates absolute social URLs and a sitemap; indexing still requires `indexable: true`.
 
-Tailwind v4 uses its official Vite plugin and CSS `@import`/`@theme` setup. Most art direction lives in readable component classes and shared tokens. Browser build targets are Chrome/Edge 111+, Firefox 128+, Safari 16.4+; these align with the modern CSS baseline and are not a claim that every historical release has been tested. Exact browser evidence is in `QA_REPORT.md`.
+Tailwind v4 uses its official Vite plugin and CSS `@import`/`@theme` setup. Most art direction lives in readable component classes and shared tokens. Browser build targets are Chrome/Edge 111+, Firefox 128+, Safari 16.4+; these align with the modern CSS baseline and are not a claim that every historical release has been tested. Browser checks are defined in `tests/browser/`.
 
 Native details/summary powers FAQs and mobile navigation. The mobile menu is an in-flow disclosure, not a modal: no overlay, focus trap or scroll lock is needed. Escape dismisses it and restores focus after hydration. Essential copy and navigation remain available without scripts. Motion is restricted to short hover transitions and optional smooth anchor movement; reduced-motion preference disables these. No reveal effect hides page content.
 
@@ -88,7 +88,7 @@ Additional commands: `npm run test:unit`, `npm run test:browser`, `npm run asset
 
 `check:links` inspects all generated links, image/script/font references and anchor IDs. External destinations are explicitly reported as unverified instead of silently assumed reachable. `check:release` deliberately fails for missing production facts, unavailable contact, owner confirmations and preview indexing. A failed release check does not mean the local site is incomplete.
 
-See `QA_REPORT.md` for measured results and actual limitations, including audit-tool dependencies. No field Core Web Vitals or accessibility certification is claimed.
+Test screenshots and audit reports are generated locally under `qa/` and excluded from Git. No field Core Web Vitals or accessibility certification is claimed.
 
 ## Static deployment preparation
 
@@ -104,7 +104,7 @@ Technical setup follows the [Tailwind Vite installation](https://tailwindcss.com
 
 Review business facts and copy whenever scope changes. Keep the owner confirmations honest. Rebuild after content/configuration edits, run the affected tests and link check, and repeat the full release gate before publication. Review npm advisories regularly; update tooling in a separate change and regenerate the lockfile with npm. Never use forced dependency upgrades without testing.
 
-Keep the source, lockfile and each approved `dist/` artifact together. Restore the previous complete artifact if a release fails; do not mix HTML and hashed asset versions. `BUSINESS_DETAILS.md`, `LAUNCH_CHECKLIST.md`, `QA_REPORT.md`, and `IMPLEMENTATION_STATUS.md` record the handoff and remaining actions.
+Keep the source, lockfile and each approved `dist/` artifact together. Restore the previous complete artifact if a release fails; do not mix HTML and hashed asset versions. `BUSINESS_DETAILS.md` and `LAUNCH_CHECKLIST.md` record the handoff and remaining actions.
 # apexgrid
 
 
