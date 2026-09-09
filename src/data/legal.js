@@ -50,8 +50,8 @@ export function legalContent(type, site) {
       'Service descriptions explain proposed areas of support. They are general information, not a binding proposal, offer, or guarantee of a particular result. Deliverables, fees, responsibilities, third-party charges, and schedules are agreed separately in a written proposal or contract.',
     ],
     [
-      'Concept examples',
-      'Examples labeled “Concept example — not client work” illustrate a possible approach. They are not completed client projects and do not represent achieved performance or customer endorsements.',
+      'Portfolio artwork',
+      'Portfolio images show selected creative work. Displaying artwork featuring a brand does not itself establish a partnership or customer endorsement. Performance outcomes are not claimed, and offers shown within artwork are not current offers from ApexGrid.',
     ],
     [
       'Using this website',

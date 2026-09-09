@@ -2,8 +2,9 @@ import { ArrowDown, ArrowUpRight, Check } from 'lucide-react';
 import { copy, engagements, faq, principles } from '../data/content.js';
 import { Container, FAQ, LinkButton, SectionHeading } from '../components/ui.jsx';
 import { GrowthDiagram } from '../components/Graphics.jsx';
-import { Examples, Process, ServiceList } from '../components/Sections.jsx';
+import { Process, ServiceList } from '../components/Sections.jsx';
 import { FinalCTA } from '../components/Layout.jsx';
+import SelectedWork from '../components/SelectedWork.jsx';
 export default function Home() {
   return (
     <>
@@ -91,7 +92,7 @@ export default function Home() {
         </Container>
       </section>
       <Process />
-      <Examples />
+      <SelectedWork />
       <section className="section">
         <Container>
           <SectionHeading

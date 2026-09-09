@@ -1,4 +1,16 @@
+# Portfolio redesign completed
+
+Six real artworks now use an editorial 2/3/1 layout, category filters, ApexGrid signature frames, project details and a native modal viewer. Five AI-assisted refined copies are available with original comparison; Tiago retains the original because its generated variant changed vehicle details. Build, lint, all 58 tests and local links passed.
+
 # Implementation status
+
+## Selected-work update — 10 September 2026
+
+Replaced the sample sections with six user-supplied artworks on the homepage and approach page. Added responsive optimized images, descriptive captions, full-artwork links and a wide packaging-board layout. Removed fictional demo testimonials/case studies, old concept sections, sample data exports and demo preview tooling. Preserved original artwork files and current business configuration. This update supersedes earlier sample-preview notes below.
+
+## Visible website samples
+
+Connected `siteExamples` to the development homepage through `DemoContent`. A visible demo banner links to sample testimonial and case-study sections; booking/form/retention examples appear in an expandable settings panel as non-interactive text. `import.meta.env.DEV` excludes these fictional sections from the production build.
 
 ## Sample data placement update
 

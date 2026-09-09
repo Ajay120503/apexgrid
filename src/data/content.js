@@ -11,7 +11,6 @@ export const copy = {
     'ApexGrid brings strategy, creative work, and digital execution into one practical plan. We start with what your business needs, define the work that matters, and keep the next steps clear.',
   finalHeading: 'What would you like your marketing to do next?',
   finalCopy: 'Tell us about your business, your goals, and where you need support.',
-  concept: 'Concept example — not client work.',
 };
 export const principles = [
   'Business goals before channel selection',
@@ -95,68 +94,6 @@ export const faq = [
     'How do we get started?',
     'When enquiries are available, share your business goals and the support you are considering through the contact page.',
   ],
-];
-export const examples = [
-  {
-    id: 'local-discovery',
-    title: 'Make the next local search count.',
-    short: 'Local discovery',
-    channels: 'SEARCH + WEB',
-    kind: 'search',
-    intro: 'A concept search and landing-page plan for a local service business.',
-    challenge:
-      'A local service business needs a clearer way for nearby customers to understand its offering and find relevant service information.',
-    solution:
-      'Connect search intent with useful service pages, consistent business information, and a straightforward enquiry path.',
-    deliverables: [
-      'Search-intent map',
-      'Service-page structure and sample copy',
-      'Local information review',
-      'Enquiry-path recommendations',
-    ],
-    measurement:
-      'Review relevant search impressions, visits to service pages, and completed enquiry actions where measurement is configured.',
-  },
-  {
-    id: 'product-launch',
-    title: 'Give a new idea a clear introduction.',
-    short: 'Product launch',
-    channels: 'CONTENT + CAMPAIGNS',
-    kind: 'launch',
-    intro: 'A concept creative and channel plan for a new product introduction.',
-    challenge:
-      'A new product needs to explain its value to a defined audience with a consistent message across launch channels.',
-    solution:
-      'Build a message framework and creative direction, then plan a focused sequence of content and paid campaign tests.',
-    deliverables: [
-      'Launch message framework',
-      'Creative concept system',
-      'Channel and content sequence',
-      'Campaign test plan',
-    ],
-    measurement:
-      'Assess creative engagement, qualified landing-page visits, and intended customer actions. Set targets only after a baseline and budget are agreed.',
-  },
-  {
-    id: 'service-enquiries',
-    title: 'Turn interest into a clearer next step.',
-    short: 'Service enquiries',
-    channels: 'WEB + MEASUREMENT',
-    kind: 'web',
-    intro: 'A concept website and measurement plan for a professional service.',
-    challenge:
-      'A professional service needs to explain its expertise and make it easier for suitable prospects to begin a conversation.',
-    solution:
-      'Clarify the service hierarchy, answer common decision questions, and simplify the contact journey with a useful measurement plan.',
-    deliverables: [
-      'Page hierarchy',
-      'Service-page wireframe',
-      'Enquiry-form recommendations',
-      'Conversion measurement plan',
-    ],
-    measurement:
-      'Observe service-to-contact journeys, form completion, and enquiry relevance. Avoid equating form volume alone with business value.',
-  },
 ];
 export const formCopy = {
   unavailableTitle: 'Let’s make the next step a useful one.',

@@ -17,9 +17,9 @@ export const routes = [
   {
     path: '/approach/',
     type: 'approach',
-    title: 'Our Approach & Concept Examples | ApexGrid',
+    title: 'Our Approach & Selected Work | ApexGrid',
     description:
-      'Explore a practical four-step marketing process and three clearly labeled concept examples connecting search, content, campaigns, and websites.',
+      'Explore our four-step marketing process and selected brand posters, product creatives, and packaging artwork.',
   },
   {
     path: '/contact/',

@@ -1,4 +1,12 @@
+# Portfolio redesign verification
+
+Production build, ESLint, 33 unit/static tests and 25 Chromium browser tests passed. Checked 489 local references across 12 pages. New checks cover filtering, original/refined switching, dialog accessibility, Escape/focus restoration and artwork access without JavaScript. Responsive layout checks include 320–3840px. Screenshots: qa/selected-work-modern-1440.png and qa/selected-work-modern-390.png. Earlier Lighthouse scores below predate this redesign.
+
 # QA report
+
+## Portfolio update — 10 September 2026
+
+Added all six user-supplied artworks to the homepage and approach gallery, with responsive WebP images and a wide packaging-board layout. Removed demo content and fictional concepts. Build and lint pass; all 33 unit/static and 23 Chromium browser tests pass; 489 local references resolve. Additional browser inspection confirmed all six images load, six detail entries exist, and sample sections are absent. Screenshots: `qa/selected-work-390.png` and `qa/selected-work-1440.png`. Original source files remain unchanged. Earlier Lighthouse/Firefox measurements below predate the portfolio addition and were not repeated for this content update.
 
 Verified locally on 8 September 2026. The source implementation is complete. Public release is intentionally blocked until the business information and owner confirmations are supplied.
 

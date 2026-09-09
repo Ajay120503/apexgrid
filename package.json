@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir .ssr && node scripts/prerender.mjs",
+    "build": "node scripts/work-assets.mjs && vite build && vite build --ssr src/entry-server.jsx --outDir .ssr && node scripts/prerender.mjs",
     "preview": "node scripts/serve.mjs",
     "lint": "eslint .",
     "test": "vitest run && playwright test",
@@ -17,11 +17,11 @@
     "check:links": "node scripts/check-links.mjs",
     "check:release": "node scripts/check-release.mjs",
     "audit": "node scripts/audit.mjs",
-    "assets": "node scripts/assets.mjs",
+    "assets": "node scripts/assets.mjs && node scripts/work-assets.mjs",
     "format": "prettier --write src scripts tests *.js *.json index.html",
     "format:check": "prettier --check src scripts tests *.js *.json index.html",
     "test:firefox": "playwright test --config playwright.cross.config.js",
-    "preview:content": "node scripts/preview-content.mjs"
+    "predev": "node scripts/work-assets.mjs"
   },
   "dependencies": {
     "lucide-react": "1.43.0",

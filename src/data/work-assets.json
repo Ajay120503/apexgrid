@@ -1,0 +1,190 @@
+{
+  "apexgrid-heritage": {
+    "refined": {
+      "width": 1024,
+      "height": 1536,
+      "variants": [
+        {
+          "url": "/work/apexgrid-heritage-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/apexgrid-heritage-1200.webp",
+          "width": 1024
+        }
+      ]
+    },
+    "original": {
+      "width": 1024,
+      "height": 1536,
+      "variants": [
+        {
+          "url": "/work/apexgrid-heritage-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/apexgrid-heritage-original-1200.webp",
+          "width": 1024
+        }
+      ]
+    }
+  },
+  "apexgrid-traditional-values": {
+    "refined": {
+      "width": 1024,
+      "height": 1536,
+      "variants": [
+        {
+          "url": "/work/apexgrid-traditional-values-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/apexgrid-traditional-values-1200.webp",
+          "width": 1024
+        }
+      ]
+    },
+    "original": {
+      "width": 1024,
+      "height": 1536,
+      "variants": [
+        {
+          "url": "/work/apexgrid-traditional-values-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/apexgrid-traditional-values-original-1200.webp",
+          "width": 1024
+        }
+      ]
+    }
+  },
+  "tiago-social-creative": {
+    "refined": {
+      "width": 2160,
+      "height": 2700,
+      "variants": [
+        {
+          "url": "/work/tiago-social-creative-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/tiago-social-creative-1200.webp",
+          "width": 1200
+        }
+      ]
+    },
+    "original": {
+      "width": 2160,
+      "height": 2700,
+      "variants": [
+        {
+          "url": "/work/tiago-social-creative-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/tiago-social-creative-original-1200.webp",
+          "width": 1200
+        }
+      ]
+    }
+  },
+  "green-bean-coffee": {
+    "refined": {
+      "width": 1122,
+      "height": 1402,
+      "variants": [
+        {
+          "url": "/work/green-bean-coffee-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/green-bean-coffee-1200.webp",
+          "width": 1122
+        }
+      ]
+    },
+    "original": {
+      "width": 1620,
+      "height": 2025,
+      "variants": [
+        {
+          "url": "/work/green-bean-coffee-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/green-bean-coffee-original-1200.webp",
+          "width": 1200
+        }
+      ]
+    }
+  },
+  "sprite-refreshment": {
+    "refined": {
+      "width": 1122,
+      "height": 1402,
+      "variants": [
+        {
+          "url": "/work/sprite-refreshment-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/sprite-refreshment-1200.webp",
+          "width": 1122
+        }
+      ]
+    },
+    "original": {
+      "width": 1427,
+      "height": 1671,
+      "variants": [
+        {
+          "url": "/work/sprite-refreshment-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/sprite-refreshment-original-1200.webp",
+          "width": 1200
+        }
+      ]
+    }
+  },
+  "krisp-packaging": {
+    "refined": {
+      "width": 2172,
+      "height": 724,
+      "variants": [
+        {
+          "url": "/work/krisp-packaging-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/krisp-packaging-1200.webp",
+          "width": 1200
+        },
+        {
+          "url": "/work/krisp-packaging-2400.webp",
+          "width": 2172
+        }
+      ]
+    },
+    "original": {
+      "width": 4995,
+      "height": 1258,
+      "variants": [
+        {
+          "url": "/work/krisp-packaging-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/krisp-packaging-original-1200.webp",
+          "width": 1200
+        },
+        {
+          "url": "/work/krisp-packaging-original-2400.webp",
+          "width": 2400
+        }
+      ]
+    }
+  }
+}

@@ -1,7 +1,6 @@
-import { copy, examples, process } from '../data/content.js';
+import { process } from '../data/content.js';
 import { services } from '../data/services.js';
 import { Container, Icon, SectionHeading } from './ui.jsx';
-import { ConceptGraphic } from './Graphics.jsx';
 export function Process({ expanded = false }) {
   return (
     <section className="section process-section">
@@ -44,37 +43,5 @@ export function ServiceList({ exclude }) {
           </a>
         ))}
     </div>
-  );
-}
-export function Examples() {
-  return (
-    <section className="section examples-section">
-      <Container>
-        <div className="section-top">
-          <SectionHeading
-            eyebrow="THINKING, MADE TANGIBLE"
-            title="See how the pieces could come together."
-          />
-          <a className="text-link" href="/approach/">
-            Explore our approach <Icon name="arrow" size={18} />
-          </a>
-        </div>
-        <div className="examples-grid">
-          {examples.map((example) => (
-            <article className="example-card" key={example.id}>
-              <a href={`/approach/#${example.id}`} aria-label={`Explore ${example.short} concept`}>
-                <ConceptGraphic kind={example.kind} />
-              </a>
-              <p className="eyebrow">{example.channels}</p>
-              <h3>
-                <a href={`/approach/#${example.id}`}>{example.title}</a>
-              </h3>
-              <p>{example.intro}</p>
-              <p className="concept-label">{copy.concept}</p>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </section>
   );
 }

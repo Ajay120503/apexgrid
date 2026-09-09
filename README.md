@@ -1,6 +1,10 @@
+# Portfolio presentation update
+
+Home → Selected Work shows all six artworks with category filters and ApexGrid branded frames. Click artwork to open the viewer; refined pieces offer an Original toggle. Approach contains detailed project descriptions. Edit project copy in src/data/work.js. Image sources and prompts are documented in src/assets/refined/README.md. Run npm run build after asset changes.
+
 # ApexGrid
 
-A complete static digital-marketing website built from `ApexGrid.md`. The brief and supplied `apexgrid.jpeg` are preserved. The source includes a homepage, six service pages, approach/concept examples, contact, privacy, terms, and a useful 404: 12 generated HTML outputs.
+A complete static digital-marketing website built from `ApexGrid.md`. The brief and supplied `apexgrid.jpeg` are preserved. The source includes a homepage, six service pages, approach/selected work, contact, privacy, terms, and a useful 404: 12 generated HTML outputs.
 
 **Local implementation is complete and verified. Public launch is blocked by missing business configuration and owner review.** No website was published and no live enquiry was sent.
 
@@ -42,14 +46,14 @@ Native details/summary powers FAQs and mobile navigation. The mobile menu is an 
 | --- | --- |
 | `src/data/site.js` | Public business facts, enquiry mode, indexing and owner confirmations |
 | `src/data/services.js` | Six service scopes, deliverables, inputs, FAQs and CTA labels |
-| `src/data/content.js` | Main copy, principles, process, concept examples, engagements, FAQs and form messages |
+| `src/data/content.js` | Main copy, principles, process, engagements, FAQs and form messages |
 | `src/data/legal.js` | Editable privacy/terms drafts reflecting the selected contact mode |
 | `src/lib/routes.js` | Public paths, titles/descriptions and primary navigation |
 | `src/styles/global.css` | Brand tokens, font, responsive layouts and focus/motion rules |
-| `src/components/Graphics.jsx` | Original concept graphics and the connected-marketing diagram |
+| `src/components/Graphics.jsx` | Original connected-marketing diagram |
 | `scripts/assets.mjs` | Provisional PNG icons and 1200×630 social image generation |
 
-Do not add secrets to source, `.env` client variables or `dist/`. There is no secret-bearing integration. `.env.example` intentionally documents that configuration lives in the public data file. Optional social/phone/booking links appear only when configured. Numeric pricing, testimonials, verified clients and certifications are absent. The three examples are clearly labeled concepts.
+Do not add secrets to source, `.env` client variables or `dist/`. There is no secret-bearing integration. `.env.example` intentionally documents that configuration lives in the public data file. Optional social/phone/booking links appear only when configured. Numeric pricing, testimonials, verified clients and certifications are absent. Six user-supplied portfolio artworks are displayed without invented client relationships or performance results.
 
 ## Contact modes
 
@@ -103,6 +107,7 @@ Review business facts and copy whenever scope changes. Keep the owner confirmati
 Keep the source, lockfile and each approved `dist/` artifact together. Restore the previous complete artifact if a release fails; do not mix HTML and hashed asset versions. `BUSINESS_DETAILS.md`, `LAUNCH_CHECKLIST.md`, `QA_REPORT.md`, and `IMPLEMENTATION_STATUS.md` record the handoff and remaining actions.
 # apexgrid
 
-## Local example content
 
-`npm run preview:content` generates `qa/content-preview.html`. Open it locally to review realistic but explicitly fictional testimonials and concept case studies alongside configuration examples. Edit the separate `siteExamples` export in `src/data/site.js` to change these fixtures. The live app uses only the `site` export. The mock booking URL is non-working and the Formspree endpoint contains a replacement marker. The 12-month retention wording is a sample, not an adopted policy. Use only real, permission-approved customer evidence in live configuration.
+## Selected work
+
+Edit titles, descriptions, and alt text in `src/data/work.js`. Originals are preserved in `src/assets/`. `scripts/work-assets.mjs` generates responsive WebP files under `public/work/` on every build. The homepage shows all six pieces; `/approach/#work` provides the detailed gallery. Click an artwork to view its full-size web version. The wide Krisp board has a full-width layout and an additional 2400px version. Former demo data, fictional testimonials, concept projects, and the demo-preview command have been removed.
