@@ -4,6 +4,7 @@ import { JSDOM } from 'jsdom';
 import { routes } from '../src/lib/routes.js';
 import { metadata } from '../src/lib/metadata.js';
 import { site } from '../src/data/site.js';
+import { productionOrigin } from '../src/lib/config.js';
 const luminance = (hex) => {
   const rgb = hex
     .replace('#', '')
@@ -27,8 +28,13 @@ describe('static output and metadata', () => {
       expect(doc.querySelector('main').textContent.length).toBeGreaterThan(100);
       expect(doc.title).toBe(route.title);
       titles.add(doc.title);
-      expect(doc.querySelector('meta[name="robots"]').content).toBe('noindex, nofollow');
-      expect(doc.querySelector('link[rel="canonical"]')).toBeNull();
+      const origin = productionOrigin(site.productionUrl);
+      expect(doc.querySelector('meta[name="robots"]').content).toBe(
+        origin && site.indexable && route.type !== '404' ? 'index, follow' : 'noindex, nofollow',
+      );
+      const canonical = doc.querySelector('link[rel="canonical"]');
+      if (origin && route.type !== '404') expect(canonical.href).toBe(`${origin}${route.path}`);
+      else expect(canonical).toBeNull();
       expect(doc.querySelector('meta[property="og:image:width"]').content).toBe('1200');
       expect(doc.querySelector('meta[property="og:image:height"]').content).toBe('630');
       const schema = JSON.parse(

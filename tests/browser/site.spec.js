@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { routes } from '../../src/lib/routes.js';
+import { site } from '../../src/data/site.js';
+import { contactConfigError } from '../../src/lib/config.js';
 const widths = [320, 375, 390, 768, 1024, 1440, 1920, 3840];
 test('every route loads directly, reloads, has unique metadata and hydrates cleanly', async ({
   page,
@@ -75,14 +77,25 @@ test('skip link, native FAQ keyboard behavior and visible focus', async ({ page 
   await expect(page.locator('.faq-list details').first()).toHaveAttribute('open', '');
   expect(await summary.evaluate((el) => getComputedStyle(el).outlineStyle)).not.toBe('none');
 });
-test('service CTA has safe preselection; contact unavailable state is honest', async ({ page }) => {
+test('service CTA has safe preselection and matches the configured contact mode', async ({
+  page,
+}) => {
   await page.goto('/services/seo/');
   await page.getByRole('link', { name: 'Discuss your SEO goals', exact: true }).first().click();
   await expect(page).toHaveURL(/\/contact\/\?service=seo$/);
-  await expect(
-    page.getByText('Online enquiries are not yet available.', { exact: false }),
-  ).toBeVisible();
-  await expect(page.locator('form')).toHaveCount(0);
+  if (site.contactMode === 'unconfigured' || contactConfigError(site)) {
+    await expect(
+      page.getByText('Online enquiries are not yet available.', { exact: false }),
+    ).toBeVisible();
+    await expect(page.locator('form')).toHaveCount(0);
+  } else {
+    await expect(page.getByLabel('Service interest (optional)')).toHaveValue('seo');
+    await expect(
+      page.getByRole('button', {
+        name: site.contactMode === 'email' ? 'Open email draft' : 'Submit enquiry',
+      }),
+    ).toBeVisible();
+  }
 });
 test('all static content and navigation work without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({

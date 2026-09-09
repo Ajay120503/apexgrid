@@ -16,6 +16,7 @@ export function Wordmark() {
 export function DirectLinks({ config = site }) {
   return (
     <div className="direct-links">
+      {config.location && <p className="business-location">{config.location}</p>}
       {isEmail(config.email) && <a href={`mailto:${config.email}`}>{config.email}</a>}
       {config.phoneDisplay && /^\+[1-9]\d{6,14}$/.test(config.phoneE164 || '') && (
         <a href={`tel:${config.phoneE164}`}>{config.phoneDisplay}</a>

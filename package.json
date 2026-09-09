@@ -20,7 +20,8 @@
     "assets": "node scripts/assets.mjs",
     "format": "prettier --write src scripts tests *.js *.json index.html",
     "format:check": "prettier --check src scripts tests *.js *.json index.html",
-    "test:firefox": "playwright test --config playwright.cross.config.js"
+    "test:firefox": "playwright test --config playwright.cross.config.js",
+    "preview:content": "node scripts/preview-content.mjs"
   },
   "dependencies": {
     "lucide-react": "1.43.0",

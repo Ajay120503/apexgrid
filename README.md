@@ -102,3 +102,7 @@ Review business facts and copy whenever scope changes. Keep the owner confirmati
 
 Keep the source, lockfile and each approved `dist/` artifact together. Restore the previous complete artifact if a release fails; do not mix HTML and hashed asset versions. `BUSINESS_DETAILS.md`, `LAUNCH_CHECKLIST.md`, `QA_REPORT.md`, and `IMPLEMENTATION_STATUS.md` record the handoff and remaining actions.
 # apexgrid
+
+## Local example content
+
+`npm run preview:content` generates `qa/content-preview.html`. Open it locally to review realistic but explicitly fictional testimonials and concept case studies alongside configuration examples. Edit `src/data/site.examples.js` to change these fixtures. This file is not imported into the live app. The mock booking URL is non-working and the Formspree endpoint contains a replacement marker. The 12-month retention wording is a sample, not an adopted policy. Use only real, permission-approved customer evidence in live configuration.
