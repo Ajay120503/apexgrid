@@ -11,7 +11,7 @@ export const site = {
   socialLinks: [{ label: 'Instagram', url: 'https://www.instagram.com/_apexgrid_/' }],
   contactMode: 'email', // Opens an email draft; use 'endpoint' for direct form submission.
   formEndpoint: null, // Add your assigned Formspree endpoint for direct submissions.
-  formProvider: null, // Supported endpoint adapter: 'formspree'
+  formProvider: 'formspree', // Supported endpoint adapter: 'formspree'
   retentionInfo: null, // Required: describe how long you actually keep enquiry emails.
   analyticsEnabled: false, // No analytics integration is implemented yet.
   verifiedTestimonials: [], // Fictional test fixtures are isolated in site.examples.js.
