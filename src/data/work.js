@@ -1,17 +1,17 @@
 import manifest from './work-assets.json';
 export const work = [
-  {
-    id: 'apexgrid-heritage',
-    title: 'ApexGrid — Heritage collage',
-    category: 'Brand communication',
-    description:
-      'An ApexGrid brand poster bringing together Indian decorative motifs, vintage stamp details, and the agency’s digital marketing message.',
-    detail:
-      'A layered composition of illustrated stamps, florals, and familiar cultural details surrounds the ApexGrid identity. The artwork connects the headline “Traditional Values for a Digital Tomorrow” with the agency’s services.',
-    alt: 'ApexGrid poster with vintage Indian stamps, an illustrated elephant, auto-rickshaw, lotus flowers and the headline Traditional Values for a Digital Tomorrow.',
-    width: 1024,
-    height: 1536,
-  },
+  // {
+  //   id: 'apexgrid-heritage',
+  //   title: 'ApexGrid — Heritage collage',
+  //   category: 'Brand communication',
+  //   description:
+  //     'An ApexGrid brand poster bringing together Indian decorative motifs, vintage stamp details, and the agency’s digital marketing message.',
+  //   detail:
+  //     'A layered composition of illustrated stamps, florals, and familiar cultural details surrounds the ApexGrid identity. The artwork connects the headline “Traditional Values for a Digital Tomorrow” with the agency’s services.',
+  //   alt: 'ApexGrid poster with vintage Indian stamps, an illustrated elephant, auto-rickshaw, lotus flowers and the headline Traditional Values for a Digital Tomorrow.',
+  //   width: 1024,
+  //   height: 1536,
+  // },
   {
     id: 'apexgrid-traditional-values',
     title: 'ApexGrid — Traditional values',
@@ -61,20 +61,20 @@ export const work = [
     width: 1427,
     height: 1671,
   },
-  {
-    id: 'krisp-packaging',
-    title: 'Krisp — Beverage packaging range',
-    category: 'Packaging design',
-    description:
-      'A coordinated label range using fruit imagery and distinct colour blocks for five beverage flavours.',
-    detail:
-      'Watermelon, orange, kiwi, blueberry, and jamun variants share a consistent label structure. Typography, fruit photography, and individual colour palettes connect the range while distinguishing each flavour.',
-    alt: 'Krisp beverage label designs for watermelon, orange, kiwi, blueberry, and jamun, arranged horizontally in pink, yellow, green, blue, and purple.',
-    width: 4995,
-    height: 1258,
-    wide: true,
-    fullWidth: 2400,
-  },
+  // {
+  //   id: 'krisp-packaging',
+  //   title: 'Krisp — Beverage packaging range',
+  //   category: 'Packaging design',
+  //   description:
+  //     'A coordinated label range using fruit imagery and distinct colour blocks for five beverage flavours.',
+  //   detail:
+  //     'Watermelon, orange, kiwi, blueberry, and jamun variants share a consistent label structure. Typography, fruit photography, and individual colour palettes connect the range while distinguishing each flavour.',
+  //   alt: 'Krisp beverage label designs for watermelon, orange, kiwi, blueberry, and jamun, arranged horizontally in pink, yellow, green, blue, and purple.',
+  //   width: 4995,
+  //   height: 1258,
+  //   wide: true,
+  //   fullWidth: 2400,
+  // },
 ];
 export const workImage = (item, width = 1200) => `/work/${item.id}-${width}.webp`;
 
