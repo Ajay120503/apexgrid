@@ -10,7 +10,7 @@ export const site = {
   bookingUrl: null, // Add your real booking-page URL; use your actual booking-page URL.
   socialLinks: [
     { label: 'Instagram', url: 'https://www.instagram.com/_apexgrid_' },
-    { label: 'Linkedin', url: 'https://www.linkedin.com/in/ajay-kandhare' }
+    { label: 'Linkedin', url: 'https://www.linkedin.com/in/apex-grid' }
   ],
   contactMode: 'email', // Opens an email draft; use 'endpoint' for direct form submission.
   formEndpoint: null, // Add your assigned Formspree endpoint for direct submissions.
