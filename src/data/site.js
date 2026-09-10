@@ -8,7 +8,10 @@ export const site = {
   whatsappNumber: '919657264056',
   location: 'Kothrud, Pune, Maharashtra',
   bookingUrl: null, // Add your real booking-page URL; use your actual booking-page URL.
-  socialLinks: [{ label: 'Instagram', url: 'https://www.instagram.com/_apexgrid_/' }],
+  socialLinks: [
+    { label: 'Instagram', url: 'https://www.instagram.com/_apexgrid_' },
+    { label: 'Linkedin', url: 'https://www.linkedin.com/in/ajay-kandhare' }
+  ],
   contactMode: 'email', // Opens an email draft; use 'endpoint' for direct form submission.
   formEndpoint: null, // Add your assigned Formspree endpoint for direct submissions.
   formProvider: null, // Supported endpoint adapter: 'formspree'
