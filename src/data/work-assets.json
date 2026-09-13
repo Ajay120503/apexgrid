@@ -1,4 +1,34 @@
 {
+  "cafe-iced-latte": {
+    "refined": {
+      "width": 1080,
+      "height": 1350,
+      "variants": [
+        {
+          "url": "/work/cafe-iced-latte-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/cafe-iced-latte-1200.webp",
+          "width": 1080
+        }
+      ]
+    },
+    "original": {
+      "width": 1080,
+      "height": 1350,
+      "variants": [
+        {
+          "url": "/work/cafe-iced-latte-original-640.webp",
+          "width": 640
+        },
+        {
+          "url": "/work/cafe-iced-latte-original-1200.webp",
+          "width": 1080
+        }
+      ]
+    }
+  },
   "apexgrid-heritage": {
     "refined": {
       "width": 1024,

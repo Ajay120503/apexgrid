@@ -141,7 +141,7 @@ export default function SelectedWork() {
       <Container>
         <div className="section-top">
           <SectionHeading
-            eyebrow="THE CREATIVE COLLECTION / 06"
+            eyebrow={`THE CREATIVE COLLECTION / ${String(work.length).padStart(2, '0')}`}
             title="Made to be seen."
             intro="Distinct identities. Considered details. Explore our brand stories, product creatives, and packaging design."
           />

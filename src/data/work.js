@@ -1,5 +1,17 @@
 import manifest from './work-assets.json';
 export const work = [
+  {
+    id: 'cafe-iced-latte',
+    title: 'Café — Iced coffee latte',
+    category: 'Beverage advertising',
+    description:
+      'An iced latte creative pairing warm coffee tones, bold typography, and a close-up product photograph.',
+    detail:
+      'A glass of iced coffee anchors a soft beige composition, with floating coffee beans adding depth. Script lettering contrasts with the oversized COFFEE LATTE headline, while the ApexGrid signature completes the layout.',
+    alt: 'Iced coffee latte in a glass with floating coffee beans, bold brown lettering on a beige background, and the ApexGrid logo.',
+    width: 1080,
+    height: 1350,
+  },
   // {
   //   id: 'apexgrid-heritage',
   //   title: 'ApexGrid — Heritage collage',
@@ -12,18 +24,18 @@ export const work = [
   //   width: 1024,
   //   height: 1536,
   // },
-  {
-    id: 'apexgrid-traditional-values',
-    title: 'ApexGrid — Traditional values',
-    category: 'Brand creative',
-    description:
-      'A brand poster pairing traditional architecture and warm visual details with a contemporary digital-work setting.',
-    detail:
-      'The ApexGrid wordmark and copper emblem lead a composition featuring architectural arches, brass lamps, and a person working at a laptop. A clear service list complements the central brand message.',
-    alt: 'ApexGrid poster with a woman using a laptop, traditional architecture, brass lamps, and a list of digital marketing services.',
-    width: 1024,
-    height: 1536,
-  },
+  // {
+  //   id: 'apexgrid-traditional-values',
+  //   title: 'ApexGrid — Traditional values',
+  //   category: 'Brand creative',
+  //   description:
+  //     'A brand poster pairing traditional architecture and warm visual details with a contemporary digital-work setting.',
+  //   detail:
+  //     'The ApexGrid wordmark and copper emblem lead a composition featuring architectural arches, brass lamps, and a person working at a laptop. A clear service list complements the central brand message.',
+  //   alt: 'ApexGrid poster with a woman using a laptop, traditional architecture, brass lamps, and a list of digital marketing services.',
+  //   width: 1024,
+  //   height: 1536,
+  // },
   {
     id: 'tiago-social-creative',
     title: 'Tiago — Automotive social creative',

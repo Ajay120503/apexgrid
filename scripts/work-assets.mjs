@@ -1,6 +1,7 @@
 import sharp from 'sharp';
 import { mkdir, access, writeFile } from 'node:fs/promises';
 const sources = [
+  ['cafe-iced-latte', 'src/assets/cafe.png'],
   ['apexgrid-heritage', 'src/assets/IMG_6934.PNG'],
   ['apexgrid-traditional-values', 'src/assets/IMG_6935.PNG'],
   ['tiago-social-creative', 'src/assets/Instagram post - 4.jpg.jpeg'],
