@@ -1,8 +1,14 @@
 # Portfolio image refinements
 
-Mode: built-in image_gen editing (not CLI). Original source files are preserved in src/assets. The five PNG files here are selected presentation copies; scripts/work-assets.mjs creates responsive WebP versions and original comparisons in public/work. All six artworks receive a separate ApexGrid wordmark footer in the website, outside the artwork.
+Mode: built-in image_gen editing (not CLI). Original source files are preserved in src/assets. The PNG files here are selected presentation copies; scripts/work-assets.mjs creates responsive WebP versions and original comparisons in public/work. Each displayed artwork receives a separate ApexGrid wordmark footer in the website, outside the artwork.
 
-Accepted: apexgrid-heritage.png, apexgrid-traditional-values.png, green-bean-coffee.png, sprite-refreshment.png, krisp-packaging.png.
+Accepted: apexgrid-heritage.png, apexgrid-traditional-values.png, green-bean-coffee.png, sprite-refreshment.png, krisp-packaging.png, cafe-iced-latte.png.
+
+Café refinement: src/assets/refined/cafe-iced-latte.png. Original: src/assets/cafe.png. Reviewed for headline spelling, ApexGrid branding, composition, glass/ice detail, and bean edges; accepted for portfolio presentation.
+
+Final café prompt (built-in image_gen edit):
+
+> Use case: precise-object-edit. Asset type: professional café advertising artwork for the ApexGrid portfolio. Edit target: attached cafe.png. Refine this exact design with clean photographic detail, realistic glass and ice reflections, more balanced warm lighting, natural coffee texture and carefully defined coffee bean edges. Keep the beige background, white rounded shapes, original 4:5 portrait composition, glass scale and placement, floating beans and depth of field. Preserve exact text 'Iced' in script and 'COFFEE LATTE' in tall bold brown typography, with their original placement and hierarchy. Preserve the small bottom-left ApexGrid logo with its copper A symbol and black/magenta wordmark exactly; keep its white circular backing. No additional text, logos, claims, props, borders or watermarks. Reduce cutout halos and harsh artificial shadows; avoid oversharpening or excessive saturation. Deliver one polished, faithful edited artwork, not a redesigned concept.
 
 The generated Tiago edit was rejected because it changed vehicle details. The original Tiago is used in the new presentation. Refined artwork is AI-assisted and may alter small details or microtext; the viewer explicitly offers the original for exact label text. These are presentation assets, not production packaging files or evidence of client endorsement.
 

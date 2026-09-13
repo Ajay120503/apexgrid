@@ -1,8 +1,8 @@
 {
   "cafe-iced-latte": {
     "refined": {
-      "width": 1080,
-      "height": 1350,
+      "width": 1122,
+      "height": 1402,
       "variants": [
         {
           "url": "/work/cafe-iced-latte-640.webp",
@@ -10,7 +10,7 @@
         },
         {
           "url": "/work/cafe-iced-latte-1200.webp",
-          "width": 1080
+          "width": 1122
         }
       ]
     },
